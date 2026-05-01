@@ -900,6 +900,46 @@
   .delay-1 { animation-delay: 0.1s; }
   .delay-2 { animation-delay: 0.2s; }
   .delay-3 { animation-delay: 0.3s; }
+
+  /* ── MOBILE (max-width: 600px) ────────────────────────────────────── */
+  @media (max-width: 600px) {
+
+    /* 1. Buttons — evitar corte en pantallas pequeñas */
+    .btn-lg {
+      padding: 12px 20px;
+      font-size: 13px;
+    }
+
+    /* 2. Sección 8/10 (problem-stat) — reducir espacios enormes */
+    .problem-stat {
+      gap: 32px;
+      padding: 28px 0;
+    }
+    .big-stat {
+      font-size: clamp(80px, 22vw, 130px);
+    }
+
+    /* 3. Sections — reducir padding general */
+    .section {
+      padding: 64px 0;
+    }
+
+    /* 4. Hero card — 100% width y padding interno reducido */
+    .hero-card {
+      width: 100%;
+      padding: 20px;
+    }
+
+    /* 5. Price block — padding reducido en mobile */
+    .price-block {
+      padding: 40px 24px;
+    }
+
+    /* 6. FAQ — reducir padding entre items */
+    .faq-item {
+      padding: 16px 0;
+    }
+  }
 </style>
 </head>
 <body>
